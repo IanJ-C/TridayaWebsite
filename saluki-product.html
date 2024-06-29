@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tridaya Setiamanunggal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light pt-5">
+
+<!-- Navbar -->
+<nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top border-custom blur-filter">
+    <div class="container mb-2 px-0">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/Logo_TSM.png" alt="Logo">
+        </a>
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-3" id="navbar-content">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Home</a>
+                </li>
+                <li class="nav-item drop">
+                    <a href="index.html#products" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="aaronia-product.html">Aaronia</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="#">Saluki</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="sanko-product.html">Sanko</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="sefram-product.html">Sefram</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="rdf-product.html">RDF</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html#clients" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Contacts</a>
+                </li>
+            </ul>
+            <!-- <form class="me-1 d-md-block gap-2 mb-2 mb-md-0" role="search">
+                <div class="input-group mb-lg-0 mb-2">
+                    <input type="search" class="form-control form-control-sm" placeholder="Search for...">
+                    <button type="submit" class="btn btn-sm btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <div class="me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                <a href="#" class="btn btn-sm btn-danger align-items-center d-inline-flex justify-content-center" style="margin-top: 0.125rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                    Sign-up Now! 
+                </a>
+                <a href="#" class="btn btn-sm btn-success align-items-center d-inline-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg>
+                    Login 
+                </a>
+            </div> -->
+        </div>
+    </div>
+</nav>
+
+
+<!-- About Banner -->
+<header class="main-header py-4">
+    <div class="container-fluid p-0">
+        <div id="carouselExample" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active overflow-hidden top-banner">
+                    <img src="images/citynight_small.jpg" class="img-fluid" alt="Banner">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Products Content -->
+<section class="product pb-4 my-3" id="clients">
+    <div class="container">
+        <!-- CSA Series Signal Analyzer -->
+        <div class="row mb-4 align-items-center">
+            <h1 class="fs-2 mb-3">CSA Series Signal Analyzer</h1>
+            <div class="col-lg-3 col-md-5">
+                <img src="images/saluki_csa_removebg.png" alt="CSA Series" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    Saluki CSA series signal analyzer reaches the frequency from 100 kHz to 26.5 GHz with a maximum of 40 MHz analysis bandwidth. It can test signal power, frequency, phase, P-1, TOI, OBW, channel 
+                    power, spurious, ACPR, CCDF, SEM, EVM, and other indicators. It can be used independently or combined with the chassis to form a test system. CSA series signal analyzer is a cost-effective tool 
+                    for essential signal characterization. Its capabilities provide a solid foundation for testing in general-purpose and educational applications.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-12">
+                <h2 class="fs-3 mb-3">Key Features</h2>
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    <ul class="ms-4 mb-0">
+                        <li>Frequency range from 100kHz to 26.5GHz</li>
+                        <li>Low DANL level to -164dBm @ 1GHz (preamp on)</li>
+                        <li>1Hz minimum resolution bandwidth (RBW)</li>
+                        <li>Fast continuous scanning technology</li>
+                        <li>USB control, independent application software</li>
+                        <li>Small size 175x150x64 mm, easy to carry</li>
+                        <li>Can be used independently or combined with the chassis to form a test system</li>
+                    </ul>
+                    <a class="icon-link link-opacity-75-hover ms-4" href="Products/Saluki Products/CSA-Series-Signal-Analyzer-Datasheet.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text h5 mt-2" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        CSA Series Signal Analyzer Datasheet
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- SAM533 Series Spectrum Analyzer Module -->
+        <div class="row mb-4 align-items-center">
+            <h1 class="fs-2 mb-3">SAM533 Series Spectrum Analyzer Module</h1>
+            <div class="col-lg-3 col-md-5">
+                <img src="images/saluki_SAM533_removebg.png" alt="Spectran V6 CC" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    Saluki SAM533 series spectrum analyzer module is a wide-band, high-performance spectrum analyzer. The frequency measurement range covers up to 20GHz. The main technical indicators are comparable 
+                    to the desktop spectrum analyzer. The integrated design of highly integrated RF front-end and digital processing enables it to have ultra-small size and independent signal processing capabilities, 
+                    especially suitable for microwave test system integration and signal monitoring sensor applications. The product adopts fully digital IF processing technology to ensure higher measurement accuracy 
+                    and excellent repeatability, and has independent signal processing capability, which is especially suitable for system integration and signal monitoring applications. The maximum real-time 
+                    bandwidth of 40MHz meets the test of common radio signals such as mobile communication, TV and WiFi, and the 145MHz analog IF output provides users with a variety of test options.
+                    The PC host computer directly obtains the measurement results through the USB or LAN interface. Users can flexibly carry out secondary development according to their needs, and can quickly build 
+                    and upgrade the integrated test system. SAM533 series spectrum analyzer module can be widely used in aerospace, microwave communication, satellite navigation, radar detection, electronic detection 
+                    and countermeasures, precision guidance and other fields.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-12">
+                <h2 class="fs-3 mb-3">Key Features</h2>
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    <ul class="ms-4 mb-0">
+                        <li>Frequency range: 5kHz - 8GHz / 9kHz - 20GHz</li>
+                        <li>Resolution bandwidth: 1Hz -5MHz</li>
+                        <li>Sensitive, DANL < -160dBm</li>
+                        <li>Maximum real-time bandwidth: 40MHz</li>
+                        <li>145MHz analog IF output</li>
+                        <li>Independent source modules provide wider choices for system integration</li>
+                        <li>Adopt USB, LAN interface, easy to control connection</li>
+                        <li>Standard and complete SCPI commands make system integration testing flexible and convenient</li>
+                        <li>Small size, ultra-light weight, easy system integration</li>
+                    </ul>
+                    <a class="icon-link link-opacity-75-hover ms-4" href="Products/Saluki Products/SAM533-Series-Spectrum-Analyzer-Module-Datasheet.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text h5 mt-2" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        SAM533 Series Spectrum Analyzer Module Datasheet
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- 1465 Series Signal Generator -->
+        <div class="row mb-4 align-items-center">
+            <h1 class="fs-2 mb-3">1465 Series Signal Generator</h1>
+            <div class="col-lg-3 col-md-5">
+                <img src="images/saluki-1465-series-bgremove.png" alt="Spectran V6 CC" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    1465 series microwave signal generators, with the frequency range of 100kHz – 67GHz, is provided with high purity spectrum and high output power. It can meet the high-end requirements of 
+                    electromagnetic signal tests. 1465 series owns the functions of high-precision analog sweep and high-performance analog and pulse modulation, with maximum bandwidth of internally modulated signal 
+                    generator up to 10MHz, various signal waveforms, the minimum pulse width of 20ns and flexible pulse trains, which can meet the test requirements of analog and pulse modulations. A 10.1 inch 
+                    display screen as well as a number of independent operation styles, such as buttons, mouse and touch screens are equipped so as to improve user experience and test efficiency. 1465 series can 
+                    generate high-quality continuous-wave or modulated signals, which are not only ideal local oscillation source and clock source, but also high-performance analog simulation signal source. They are 
+                    mainly used in the radar performance evaluation, high-performance receiver test and components parameter test etc., and applicable to aviation, aerospace, radar, communication and navigation 
+                    equipment etc.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-12">
+                <h2 class="fs-3 mb-3">Key Features</h2>
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    <ul class="ms-4 mb-0">
+                        <li>High purity spectrum</li>
+                        <li>Broadband and high-power output</li>
+                        <li>High stability frequency and power output</li>
+                        <li>Convenient touch screen control</li>
+                        <li>Complete frequency band serialization</li>
+                        <li>High-precision analog sweep</li>
+                        <li>Super-high power dynamic range</li>
+                        <li>Excellent analog modulation</li>
+                        <li>High-performance pulse modulation</li>
+                        <li>Multiple control and function extension interfaces</li>
+                    </ul>
+                    <a class="icon-link link-opacity-75-hover ms-4" href="Products/Saluki Products/Ceyear-1465-Signal-Generator-Datasheet.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text h5 mt-2" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        1465 Series Signal Generator Datasheet
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- S3302RC Signal/Spectrum Analyzer (5G Test Solution) -->
+        <div class="row mb-4 align-items-center">
+            <h1 class="fs-2 mb-3">S3302RC Signal/Spectrum Analyzer (5G Test Solution)</h1>
+            <div class="col-lg-3 col-md-5">
+                <img src="images/saluki_S3302RC-removebg.png" alt="Spectran V6 CC" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    Saluki S3302RC real-time spectrum analyzer is a broadband handheld real-time spectrum analyzer designed for field testing. The maximum real-time analysis bandwidth reaches 120MHz. It has real-time 
+                    spectrum analysis, 5G NR demodulation analysis, LTE FDD/TDD demodulation analysis, GSM/ EDGE demodulation analysis, directional analysis and other measurement function modes.
+                    S3302RC spectrum analyzer adopts 8.4-inch large-screen LCD and capacitive touch screen integrated design to facilitate user operation. The structure adopts a handheld chassis, which is small in 
+                    size, light in weight, flexible in power supply, easy to maneuver, and is extremely suitable for on-site use.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-12">
+                <h2 class="fs-3 mb-3">Key Features</h2>
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    <ul class="ms-4 mb-0">
+                        <li>Wide frequency range: from 9kHz to 9GHz</li>
+                        <li>Full-band preamplifiers configuration</li>
+                        <li>Excellent RF specification performance</li>
+                        <li>Real-time spectrum analysis function</li>
+                        <li>Maximum real-time analysis bandwidth: 120MHz</li>
+                        <li>512MHz IQ waveform capture</li>
+                        <li>8.4 inch high definition LCD touch screen, various display modes</li>
+                    </ul>
+                    <a class="icon-link link-opacity-75-hover ms-4" href="Products/Saluki Products/S3302RC-Handheld-Spectrum-Analyzer-Datasheet.pdf" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text h5 mt-2" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        S3302RC Signal/Spectrum Analyzer Datasheet
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!-- 3674 Series Vector Network Analyzer -->
+        <div class="row mb-4 align-items-center">
+            <h1 class="fs-2 mb-3">3674 Series Vector Network Analyzer</h1>
+            <div class="col-lg-3 col-md-5">
+                <img src="images/saluki_3674-removebg.png" alt="Spectran V6 CC" class="img-fluid">
+            </div>
+            <div class="col-lg-9 col-md-7">
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    3674 series is Ceyear’s current most high-end vector network analyzer, which can easily deal with the severe challenges brought by semiconductor chip testing, material testing, antenna testing, 
+                    high-speed cable testing, and microwave component testing. Excellent RF characteristics, flexible hardware configuration, and rich software functions complement each other, enabling multiple 
+                    measurement tasks to be completed with a single connection. The innovative human-computer interaction design can help you complete the required measurement settings quickly and easily, and the 
+                    large touch screen brings you a flexible and efficient operating experience.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-3 align-items-center">
+            <div class="col-lg-12">
+                <h2 class="fs-3 mb-3">Key Features</h2>
+                <p class="fs-6 fw-normal text-dark mb-0">
+                    <ul class="ms-4 mb-0">
+                        <li>Frequency range from 500Hz to maximum 110GHz, 11 models</li>
+                        <li>Excellent dynamic range: 131dB@20GHz</li>
+                        <li>Abundant functions: S-parameter measurement, mixer/inverter scalar analysis, mixer/inverter vector analysis, gain compression measurement, 3D view function, noise figure measurement, 
+                            spectrum analysis, THD measurement, etc.</li>
+                        <li>Available in multiple display formats such as logarithmic amplitude, linear amplitude, SWR, Phase, Smith chart</li>
+                        <li>Multi-window, multi-channel measurement, instantly execute intricate measurement plan</li>
+                        <li>15.6-inch color multi-point touch screen, optional 2-port or 4-port configuration, multiple measurement interfaces</li>
+                    </ul>
+                    <a class="icon-link link-opacity-75-hover ms-4" href="https://www.salukitec.com/3674-series-vector-network-analyzer/" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text h5 mt-2" viewBox="0 0 16 16">
+                            <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                            <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                        </svg>
+                        3674 Series Vector Network Analyzer Datasheet
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Footer -->
+<footer id="contacts" class="main-footer text-white py-5 small blue-bg">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-2">
+                <div class="brand-icon mb-2">
+                    <img src="images/Logo_TSM_Ver_White.png" alt="Logo">
+                </div>
+                <address class="text-white">
+                    AXA Tower, 33 Floor Suite 06 <br>
+                    Jl. Prof. Dr. Satrio Kav 18 <br>
+                    Jakarta 12940 <br>
+                    Indonesia <br>
+                </address>
+                <p class="=text-white">
+                    mail_admin&commat;tridayasm.co.id
+                </p>
+            </div>
+            <!-- <div class="col-md-2">
+                <h5>Main Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Misc</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                </ul>
+            </div> -->
+            <div class="col-md-2 pe-0">
+                <h5 class="ms-5 ps-4">Follow Us</h5>
+                <p class="float-end">
+                    <a href="#" class="pt-2 pe-3 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="pt-2 pe-3 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="pt-2 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <iframe class="d-flex rounded-4 border border-4 border-info px-0 mx-2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31730.37200565363!2d106.828646!3d-6.224581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3052dc956d1%3A0x694dc3f20374c328!2sAXA%20TOWER!5e0!3m2!1sen!2sid!4v1717152862035!5m2!1sen!2sid" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright -->
+<div class="copy py-4" style="background-color: #002f5c;">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white">
+            <p class="m-0 small">Copyright &copy; Tridaya Setiamanunggal 2024. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Padding -->
+<div class="mobile-padding pt-5 pb-2 d-md-none" style="background-color: black;">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

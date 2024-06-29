@@ -1,0 +1,63 @@
+.navbar-brand img{
+    width: auto;
+    max-height: 50px;
+}
+@media (min-width: 75rem){
+    .drop:hover > .dropdown-menu{
+        display: block;
+        margin-top: 0;
+    }
+}
+.full-width{
+    width: 600;
+    height: 315;
+}
+.border-custom{
+	border-bottom: 0.25rem solid #004280;
+}
+.top-banner{
+	max-width: auto;
+	max-height: 45vh;
+}
+.banner-img{
+    width: auto;
+    height: 15.625rem;
+    object-fit: fill;
+}
+.product-img{
+    width: 12.5rem;
+    height: 6.25rem;
+}
+.img-sm{
+    width: 40px;
+    height: auto;
+}
+.img-small{
+    width: 30px;
+    height: auto;
+}
+.feature-item img{
+    width: 40px;
+    height: auto;
+}
+.img-smaller{
+    max-width: 20px;
+    max-height: 20px;
+}
+.five-star{
+    background-color: #c9a36a;
+}
+.four-star{
+    background-color: #8a5fcc;
+}
+.blue-bg{
+    background-color: #004280;
+}
+.brand-icon img{
+    width: 11.25rem;
+    height: auto;
+}
+.blur-filter{
+    backdrop-filter: blur(8px);
+    background-color: rgba(255 255 255 / 30%);
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tridaya Setiamanunggal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light pt-5">
+
+<!-- Navbar -->
+<nav class="navbar navbar-light navbar-expand-lg bg-light fixed-top border-custom blur-filter">
+    <div class="container mb-2 px-0">
+        <a href="index.html" class="navbar-brand">
+            <img src="images/Logo_TSM.png" alt="Logo">
+        </a>
+        <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar-content"
+            aria-controls="navbar-content"
+            aria-expanded="false"
+            aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end mt-3" id="navbar-content">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Home</a>
+                </li>
+                <li class="nav-item drop">
+                    <a href="#products" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Products</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="aaronia-product.html">Aaronia</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="saluki-product.html">Saluki</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="sanko-product.html">Sanko</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="sefram-product.html">Sefram</a></li>
+                        <li><a class="dropdown-item fw-medium link-dark link-opacity-50 link-opacity-100-hover" href="rdf-product.html">RDF</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#clients" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Clients</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contacts" class="nav-link link-dark fs-5 fw-semibold mx-4 link-opacity-50 link-opacity-100-hover">Contacts</a>
+                </li>
+            </ul>
+            <!-- <form class="me-1 d-md-block gap-2 mb-2 mb-md-0" role="search">
+                <div class="input-group mb-lg-0 mb-2">
+                    <input type="search" class="form-control form-control-sm" placeholder="Search for...">
+                    <button type="submit" class="btn btn-sm btn-success">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+            <div class="me-1 d-grid d-md-block gap-2 mb-2 mb-md-0">
+                <a href="#" class="btn btn-sm btn-danger align-items-center d-inline-flex justify-content-center" style="margin-top: 0.125rem;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-plus-fill me-2" viewBox="0 0 16 16">
+                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"/>
+                    </svg>
+                    Sign-up Now! 
+                </a>
+                <a href="#" class="btn btn-sm btn-success align-items-center d-inline-flex justify-content-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-right me-2" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"/>
+                        <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z"/>
+                    </svg>
+                    Login 
+                </a>
+            </div> -->
+        </div>
+    </div>
+</nav>
+
+
+<!-- About Banner -->
+<header class="main-header mb-5 py-3">
+    <div class="container-fluid mb-5 p-0 pb-3">
+        <div id="carouselExample" class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active overflow-hidden top-banner">
+                    <img src="images/citynight_small.jpg" class="img-fluid" alt="Banner">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-3">
+        <div class="row align-items-center">
+            <div class="col-lg-10 col-md-8">
+                <div class="home-header-text-holder">
+                    <h1 class="fs-3">Get to Know Us!</h1>
+                    <h2 class="fs-5 fw-normal text-secondary-emphasis mt-3">
+                        Established in 1991, PT. Tridaya Setiamanunggal is a private-owned company which 
+                        mainly focused as supplier of telecommunication test and measurement solutions.
+                    </h2>
+                    <h2 class="fs-5 fw-normal text-secondary-emphasis mt-2">
+                        Having more than 30 years experience, we specialized in supplying, distributing, training 
+                        and repairing telecommunication-related devices.
+                    </h2>                  
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4">
+                <div class="home-header-image-holder">
+                    <img class="rounded img-fluid float-end" src="images/32_year.png" alt="32 Year">
+                </div>
+            </div>
+            <div class="row align-items-center" id="about">
+                <div class="col-md-12">
+                    <div class="collapse" id="collapseAbout">
+                        <h1 class="fs-5 fw-medium mt-4">PT. Tridaya Setiamanunggal</h1>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            The rapid growth of Indonesian telecom industry in late 1980’s had brought not only challenge, but opportunity as well! The three day-dreamers decided to abandon their promising careers in 
+                            a comfortable and secure environment of Hewlett-Packard conglomerate and develop their own company instead.
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            PT Tridaya Setiamanunggal was born!
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            As the name implies, PT. Tridaya Setiamanunggal has been serving as melting pot where ideas were constantly discussed, challenged and tested, often severely, to end up with innovation.
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Unbelievably, over ten painful years later, the unity of ideas, dedication, combined with prayers, tears, and years of enormous pressure, the effort was finally paid off! PT. Tridaya 
+                            Setiamanunggal not only triumphantly survived the 1997 crisis, but amazingly, it even grows into a US$ 500k company with a team of 12 occupying a spacious three storey building in the main 
+                            thoroughfare of Kelapa Gading, Jakarta. This slow but consistent blooming is real, particularly if we look into FY2004 turnover, which was U$ 1M5. Therefore, a new level of U$2M5 is very 
+                            realistic target for the FY2005 turnover.
+                        </p>
+                        <h1 class="fs-5 fw-medium mt-4">Important Milestone</h1>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            In 1994, PT Tridaya was assigned by one satellite operator in Jakarta to develop Carrier Monitoring System. This is a spectrum analyzer-based equipment to monitor activities and behavior 
+                            of satellite users in all over the country from their Master Control Station located somewhere in Jakarta. The system was designed, installed and commissioned by our own engineering team 
+                            that consists of Indonesian nationals. No foreign involvement was required. Since commissioned in late 1994, the system works well until today. Certainly, this success has tremendously 
+                            encouraged us to do more!
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Certainly, this success has tremendously encouraged us to do more!
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Less than 1 year later, we delivered an almost similar system but with feature enhance- ment for monitoring Antenna Pattern. The end-user is another Satellite Operator in Jakarta.
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            In April 2001, PT Tridaya Setia Manunggal developed and deliver Automated RF Jammer to Frequency Regulatory Body in Jakarta. The main purpose is to monitor RF Spectrum, check the frequency 
+                            allocation and “kill” unauthorized frequency users by transmitting high power tone at the targeted frequency carrier.
+                        </p>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            All is performed automatically. The system works well until today. A few years later, in early 2000s, new projects started to coming in, particularly from Ministry of Post and Telecom 
+                            (POSTEL).
+                        </p>
+                        <h1 class="fs-5 fw-medium mt-4">The Vision</h1>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Be a dependable and innovative supplier of RF/Telecom Test and Measurements.
+                        </p>
+                        <h1 class="fs-5 fw-medium mt-4">The Mission</h1>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Provide engineering value added.
+                        </p>
+                        <h1 class="fs-5 fw-medium mt-4">The Business</h1>
+                        <p class="fs-6 fw-normal text-secondary-emphasis">
+                            Supplier of Telecommunication Test & Measurements Solution. The word “Solution” means, we focus on Engineering Value-Added business, i.e, besides offering standard products such as 
+                            Spectrum Analyzers or SDH Testers, we are obsessed to offer the so called ASP or Application Specific Products. At this point, we proudly boast that we are one of the very few Indonesian 
+                            companies who is ready to deal with challenges that require Engineering Service and System Integration in Telecommunication Test and Measurement.
+                        </p>
+                    </div>
+                    <a class="btn btn-lg btn-success my-3 d-inline-flex align-items-center justify-content-center" data-bs-toggle="collapse" href="#collapseAbout" role="button" 
+                        aria-expanded="false" aria-controls="collapseAbout">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-book me-3 mt-1" viewBox="0 0 16 16">
+                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                        </svg>
+                        Read more About Us!
+                    </a>
+                </div>
+            </div>            
+        </div>
+    </div>
+</header>
+
+<hr id="products">
+<!-- Products -->
+<section class="products mt-5 mb-4 py-3">
+    <div class="container">
+        <div id="carouselAutoplayingProduct" class="mb-4 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+              <div class="carousel-item active">
+                <img src="images/Spectran_banner.png" class="d-block w-100" alt="Spectran V6 MIL">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Anritsu_banner.png" class="d-block w-100" alt="Anritsu MD8475B">
+              </div>
+              <div class="carousel-item">
+                <img src="images/Sanko_banner.png" class="d-block w-100" alt="Sanko BN1000">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplayingProduct" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplayingProduct" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-inline-flex align-items-center justify-content-center">
+                            <img src="Partners/Aaronia.png" class="img-fluid product-img rounded-start ps-2" alt="Aaronia">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body px-2">
+                            <h5 class="card-title">AARONIA</h5>
+                            <p class="card-text">Aaronia is an internationally-renowned company founded in 2003 and headquartered in Strickscheid, Germany. <br>
+                                We specialize in measuring, tracking and monitoring technology that is second to none and is a staple in many fields.</p>
+                            <a class="btn btn-primary" href="aaronia-product.html" role="button">Learn More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-inline-flex align-items-center justify-content-center">
+                            <img src="Partners/Partner Edit/Saluki.png" class="img-fluid product-img rounded-start ps-3" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body px-2">
+                            <h5 class="card-title">SALUKI</h5>
+                            <p class="card-text">Saluki Technology Inc. is a high-tech company specializing in High-end RF&MW Test Equipment, General Test Equipment, Lab Equipment and 
+                                Optical Communication Equipment. Founded in 1997, the company was initially an agent of telecommunication equipment.</p>
+                            <a class="btn btn-primary" href="saluki-product.html" role="button">Learn More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-inline-flex align-items-center justify-content-center">
+                            <img src="Partners/Partner Edit/Sanko.png" class="img-fluid product-img rounded-start ps-2" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body px-2">
+                            <h5 class="card-title">SANKO</h5>
+                            <p class="card-text">Sanko Technologies Sdn Bhd founded in 2019 and headquartered in Penang Malaysia, is a manufacturer and provider of RF and wireless 
+                                communication testing instruments and overall solutions for Bird. Sanko mainly focuses on general test hardware for benchtop and modular instruments.</p>
+                            <a class="btn btn-primary" href="sanko-product.html" role="button">Learn More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-inline-flex align-items-center justify-content-center">
+                            <img src="Partners/Partner Edit/Sefram.png" class="img-fluid product-img rounded-start ps-3" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body px-2">
+                            <h5 class="card-title">SEFRAM</h5>
+                            <p class="card-text">Created in 1947, Sefram develops its business on the field of recorders. It joined in 1978 the test and measurement division of Schlumberger. 
+                                Certified ISO 9001, Sefram's strategy is to bring to the market place innovative and high quality test and measurement products for electronic and electrical 
+                                applications.</p>
+                            <a class="btn btn-primary" href="sefram-product.html" role="button">Learn More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-inline-flex align-items-center justify-content-center">
+                            <img src="Partners/Partner Edit/RDF.png" class="img-fluid product-img rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                        <div class="card-body px-2">
+                            <h5 class="card-title">RDF</h5>
+                            <p class="card-text">RDF Products designs and manufactures professional-quality radio direction finding (RDF) equipment for land-mobile, fixed-site, vehicle 
+                                tracking and location, shipboard, and airborne radio direction finding missions. These radio direction finders are carefully designed precision-built units 
+                                employing true Adcock/Watson-Watt DF technology, and have been extensively and effectively deployed for a wide variety of radio emitter location requirements 
+                                for many years.</p>
+                            <a class="btn btn-primary" href="rdf-product.html" role="button">Learn More</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr id="clients">
+<!-- Clients Content -->
+<section class="clients my-5 py-3 pb-5" >
+    <div class="container">
+        <div id="carouselAutoplayingClients" class="mb-4 carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <img src="images/Telkom_banner.png" class="d-block w-100" alt="Telkom">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/ITB_banner.png" class="d-block w-100" alt="ITB">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/MetroTV_banner.png" class="d-block w-100" alt="Metro TV">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplayingClients" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplayingClients" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="list-group">
+            <div class="list-group-item text-bg-light fw-bold d-flex justify-content-between align-items-center">
+                Clients
+            </div>
+            <div class="list-group-item">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-inline-flex justify-content-center">
+                        <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="Customers/Telkom.png" alt="Course">
+                    </div>
+                    <div class="col-md-10">
+                        <h5 class="mt-1">Telkom Indonesia</h5>
+                        <p class="mb-2">PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN) yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) 
+                            dan jaringan telekomunikasi di Indonesia. Pemegang saham mayoritas Telkom adalah Pemerintah Republik Indonesia sebesar 52.09%, sedangkan 47.91% sisanya dikuasai 
+                            oleh publik. Saham Telkom diperdagangkan di Bursa Efek Indonesia (BEI) dengan kode “TLKM” dan New York Stock Exchange (NYSE) dengan kode “TLK”.</p>
+                            <a class="icon-link icon-link-hover mb-1" href="https://www.telkom.co.id/sites/about-telkom/id_ID/page/kontak-detail-193" target="_blank">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-inline-flex justify-content-center">
+                        <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="Customers/ITB.png" alt="Course">
+                    </div>
+                    <div class="col-md-10">
+                        <h5 class="mt-1">Institut Teknologi Bandung</h5>
+                        <p class="mb-2">Institut Teknologi Bandung (ITB) merupakan sekolah tinggi teknik pertama di Indonesia yang didirikan pada tanggal 2 Maret 1959 di Jawa Barat yang mengemban misi 
+                            pengabdian ilmu pengetahuan dan teknologi untuk memajukan Indonesia. Lahir dalam suasana penuh dinamika yang dilandasi dengan semangat perjuangan Proklamasi 
+                            Kemerdekaan, ITB hadir untuk mengoptimalkan pembangunan bangsa yang maju dan bermartabat.</p>
+                        <a class="icon-link icon-link-hover mb-1" href="https://www.itb.ac.id/contact" target="_blank">Read more
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item">
+                <div class="row align-items-center">
+                    <div class="col-md-2 d-inline-flex justify-content-center">
+                        <img class="rounded img-fluid mb-md-0 mt-md-0 mt-2" src="Customers/Indosiar.png" alt="Course">
+                    </div>
+                    <div class="col-md-10">
+                        <h5 class="mt-1">Indosiar</h5>
+                        <p class="mb-2">PT. Indosiar Visual Mandiri resmi mengudara sebagai televisi nasional pada tanggal 11 Januari 1995. Selanjutnya Indosiar melakukan perubahan status 
+                            Perseroan menjadi Perseroan Terbatas Terbuka pada tahun 2004, sehingga nama Indosiar berubah menjadi PT. Indosiar Visual Mandiri Tbk.</p>
+                            <a class="icon-link icon-link-hover mb-1" href="https://www.indosiar.com/#contact" target="_blank">Read more
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                </svg>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Main Footer -->
+<footer id="contacts" class="main-footer text-white py-4 small blue-bg">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-2">
+                <div class="brand-icon mb-2">
+                    <img src="images/Logo_TSM_Ver_White.png" alt="Logo">
+                </div>
+                <address class="text-white">
+                    AXA Tower, 33 Floor Suite 06 <br>
+                    Jl. Prof. Dr. Satrio Kav 18 <br>
+                    Jakarta 12940 <br>
+                    Indonesia <br>
+                </address>
+                <p class="=text-white">
+                    mail_admin&commat;tridayasm.co.id
+                </p>
+            </div>
+            <!-- <div class="col-md-2">
+                <h5>Main Menu</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2">
+                <h5>Misc</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                    <li><a href="#" class="text-decoration-none text-white">Link Item</a></li>
+                </ul>
+            </div> -->
+            <div class="col-lg-2 col-md-3 mt-4 pe-0">
+                <h5 class="float-end">Follow Us</h5>
+                <p class="float-end">
+                    <a href="#" class="pt-2 pe-3 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="pt-2 pe-3 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="pt-2 d-inline-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <iframe class="d-flex rounded-4 border border-4 border-info px-0 mx-2" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31730.37200565363!2d106.828646!3d-6.224581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3052dc956d1%3A0x694dc3f20374c328!2sAXA%20TOWER!5e0!3m2!1sen!2sid!4v1717152862035!5m2!1sen!2sid" 
+                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+</footer>
+
+<!-- Copyright -->
+<div class="copy py-4" style="background-color: #002f5c;">
+    <div class="container">
+        <div class="row justify-content-center text-center text-white">
+            <p class="m-0 small">Copyright &copy; Tridaya Setiamanunggal 2024. All Rights Reserved.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Mobile Padding -->
+<div class="mobile-padding pt-5 pb-2 d-md-none" style="background-color: black;">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
